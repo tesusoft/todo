@@ -34,7 +34,18 @@ function saveData(){
 }
 
 function showTask(){
-listContainer.innerHTML = localStorage.getItem("data")
+listContainer.innerHTML = localStorage.getItem("data");
 }
 
 showTask();
+
+function clearTask(){
+    const data = localStorage.getItem("data")
+    if (data){
+        localStorage.clear("data");
+        listContainer.innerHTML = '';
+        return
+    }
+    alert("Storage is already empty.")
+    
+}
