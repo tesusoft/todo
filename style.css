@@ -63,12 +63,15 @@ button{
     border-radius: 40px;
 }
 #clearTask{
-    display: flex;
+    display: block;
     border-radius: 20px;
     width: fit-content;
     align-items: center;
+    font-weight: 500;
     padding: 10px 20px;
-    margin: 0  100px 0 200px;
+    margin: 20px auto;
+    border: 0;
+    cursor: pointer;
     
     
 }
